@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Desafio 01</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>PIZZARIA MAMMA</title>
 </head>
 <body>
-    <header>
-        <div id="content-header">
-            <div id="logo">
-                LOGO    
-            </div>
-            <nav>
-                <a id="home" href="#">Home</a>
-                <a id="contato" href="#">Contato</a>
-                <a href="#">Sobre</a>
-            </nav>
-        </div>
+    <header id="top-header" class="flex">
+        <h1 class="flex">PIZZARIA DA MAMMA</h1>
+        <nav class="flex">
+            <ul class="flex">
+                <li class="flex">
+                    <a href="#" class="flex"><span class="material-symbols-outlined icon">
+                        mail
+                        </span>Contato</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div id="box-main">
-            <div class="estante pontilhado">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta pariatur quas officia corrupti aliquid rerum alias, quia sunt amet eos laboriosam. Veritatis quae enim tenetur et esse facilis sequi.</p>
+        <section class="flex">
+            <div>
+                <figure>
+                    <img src="img/pizza.jpg" alt="Pizza de estrognoff">
+                </figure>
+                <h2>Pizza de Estrogonoff</h2>
+                <form name="controle-tamanho" class="formTamPizza flex">
+                    <label class="flex" for="p">P
+                        <input type="radio" name="tam" id="p">
+                    </label>
+                    <label class="flex" for="m">M
+                        <input type="radio" name="tam" id="m">
+                    </label>
+                    <label class="flex" for="g">G
+                        <input type="radio" name="tam" id="g">
+                    </label>
+                    <input type="button" value="ESCOLHER">
+                </form>
             </div>
-            <div class="estante">
-                <input required class="txt" type="email" name="email" value="" placeholder="Digite seu email">
-                <input class="botao-enviar" type="submit" name="Enviar" value="Enviar">
-            </div>
-            
-        </div> 
+        </section>
     </main>
-    <footer>
-        <div id="rodape">by TI - ACADEMY</div>
-    </footer>
+    <footer></footer>
 </body>
 </html>
